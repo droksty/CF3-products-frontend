@@ -8,14 +8,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DropdownComponent } from './dropdown/dropdown.component';
 
 const routes: Routes = [
-  {
-    path: 'user',
-    loadChildren: () => import('./user/user.module').then((m) => m.UserModule)
-  },
-  { 
-    path: 'product',
-    loadChildren: () => import('./products/products.module').then((m) => m.ProductsModule)
-  },
+  { path: 'user', loadChildren: () => import('./user/user.module').then((m) => m.UserModule) },
+  { path: 'product', loadChildren: () => import('./product/product.module').then((m) => m.ProductModule) },
   { path: '', component: WelcomeComponent },
   { path: '**', component: PageNotFoundComponent }
 ];

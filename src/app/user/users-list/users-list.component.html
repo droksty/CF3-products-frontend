@@ -8,9 +8,9 @@
 <div *ngIf="userList.length">
   <table class="table table-striped">
     <thead>
-      <th scope="col"><button (click)="toggleSort('username')" class="btn btn-sm">username</button></th>
-      <th scope="col"><button (click)="toggleSort('name')" class="btn btn-sm">First</button></th>
-      <th scope="col"><button (click)="toggleSort('surname')" class="btn btn-sm">Last</button></th>
+      <th role="button" (click)="toggleSort('username')" scope="col">username</th>
+      <th role="button" (click)="toggleSort('name')" scope="col">First</th>
+      <th role="button" (click)="toggleSort('surname')" scope="col">Last</th>
       <th scope="col">Email</th>
       <th scope="col">Address</th>
       <th scope="col">Phone</th>

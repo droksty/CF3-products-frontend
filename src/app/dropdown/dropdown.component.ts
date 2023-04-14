@@ -9,5 +9,4 @@ import { MenuItem } from '../app.interfaces';
 export class DropdownComponent {
   @Input() items: MenuItem[] = [{ text: 'sample text', link: 'sample link' }]
   @Input() dropdownLabel = 'Dropdown'
-
 }
